@@ -1,6 +1,6 @@
 # puppeteer-opensea-scraper
 
-Node scripts used to retrieve data from opensea.io website.
+Puppeteer scripts to retrieve collections data from opensea.io website
 
 As the opensea API isn't frequently enough being updated, and some informations are hard to retrieve or even totally missings altogether, those script use Puppeteer along with extra-plugin-stealth to simulate human browsering to retrieve more accurate collections data.
 
