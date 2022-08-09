@@ -1,0 +1,10 @@
+{
+  "headless": false,
+  "maxErrorsForUpdate": 1,
+  "proxyEnabled": false,
+  "proxyPassword": "YOUR_PROXY_PASSWORD",
+  "proxyPort": "YOUR_PROXY_PORT",
+  "proxyUrl": "YOUR_PROXY_URL",
+  "proxyUsername": "YOUR_PROXY_USERNAME",
+  "timeout": 10000
+}
