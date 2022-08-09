@@ -8,7 +8,7 @@ As the opensea API isn't frequently enough being updated, and some informations 
 
 1: Clone the repo
 
-2: Install dependencies: npm install
+2: Install dependencies: `npm install`
 
 3: Edit the config.json file as you please:
 
