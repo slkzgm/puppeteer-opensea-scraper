@@ -212,7 +212,7 @@ const updateJSON = async () => {
     fs.writeFile(dataDirectory + filename, json, () => console.log(`${filename} updated.`));
   else {
     console.log(`${filename} not updated.`);
-    if (config.proxyEnabled) {
+    if (config.proxyEnabled && config.autoReload) {
       console.log('Trying one more time');
       await updateJSON();
     }

@@ -295,12 +295,12 @@ const retrieveData = async () => {
 
   errors = 0;
   await Promise.all([
-    // retrieveMnlthData(browser),
-    // retrieveMnlth2Data(browser),
+    retrieveMnlthData(browser),
+    retrieveMnlth2Data(browser),
     retrieveDunkGenesisData(browser),
-    // retrieveSkinVialData(browser)
+    retrieveSkinVialData(browser)
   ]);
-  // await browser.close();
+  await browser.close();
   console.log(performance.now() - start);
   return ({
     mnlth,
@@ -322,7 +322,7 @@ const updateJSON = async () => {
     fs.writeFile(dataDirectory + filename, json, () => console.log(`${filename} updated.`));
   else {
     console.log(`${filename} not updated.`);
-    if (config.proxyEnabled) {
+    if (config.proxyEnabled && config.autoReload) {
       console.log('Trying one more time');
       await updateJSON();
     }
